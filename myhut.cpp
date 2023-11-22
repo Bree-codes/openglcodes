@@ -2,8 +2,9 @@
 
 void display() {
   glClear(GL_COLOR_BUFFER_BIT);
-	//draws the hut's wall borders
-  // Draw the hut's left wall
+  //drawing the hut's wall borders
+	
+  // Left wall
   glBegin(GL_POINTS);
   glColor3f(1.0f, 0.0f, 0.0f); // Red
 
@@ -13,7 +14,7 @@ void display() {
 
   glEnd();
 
-  // Draw the hut's bottom wall
+  //Bottom wall
   glBegin(GL_POINTS);
   glColor3f(0.0f, 1.0f, 0.0f); // Green
 
@@ -23,7 +24,7 @@ void display() {
 
   glEnd();
 
-  // Draw the hut's right wall
+  //Right wall
   glBegin(GL_POINTS);
   glColor3f(0.0f, 0.0f, 1.0f); // Blue
 
@@ -33,7 +34,7 @@ void display() {
 
   glEnd();
 
-  // Draw the hut's roof
+  //Roof
   glBegin(GL_TRIANGLES);
    glColor3f(0.0f, 0.0f, 1.0f);     //blue
   glVertex3f(0.0f, 75.0f,0.0f);
@@ -45,7 +46,7 @@ void display() {
   glVertex3f(100.0f, 25.0f,0.0f);
   glEnd();
 
-	 // Draw the hut's walls to be colored
+ //Colored walls
   glBegin(GL_POLYGON);
   //bottom left
     glColor3f(1.0f, 0.0f, 0.0f);
